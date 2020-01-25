@@ -22,6 +22,10 @@ docker run --name kafka-server1 --network kafka-net -e ALLOW_PLAINTEXT_LISTENER=
 
 > You should now have ZooKeeper and the Kafka broker up and running as per https://itnext.io/how-to-install-kafka-using-docker-a2b7c746cbdc
 
+# Code
+
+
+
 # Sources
 - https://kafka.apache.org/quickstart
 - https://nielsberglund.com/2019/06/18/confluent-platform--kafka-for-a-.net-developer-on-windows/
