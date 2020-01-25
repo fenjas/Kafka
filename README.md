@@ -30,7 +30,7 @@ kafka produce <(int) no of messages>
 ```
 Doing this will create a <i>topic</i> called <i>cars</i> which is populated with JSON string messages comprising car properties read at random from <i>cars.txt</i>.
 
-- To output the consumed messagem in a second command prompt window, run;
+- To output to screen the consumed messages, in a second command prompt window, run;
 ```sh
 kafka consume
 ```
