@@ -12,6 +12,5 @@ namespace Kafka
         public const string groupID = "cars-group";
         public const string kafkaTopicName = "cars";
         public const string messagesFile = "cars.txt";
-
     }
 }

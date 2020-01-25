@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using Confluent.Kafka;
 
@@ -12,7 +8,7 @@ namespace Kafka
     {
         static CancellationTokenSource cts = new CancellationTokenSource();
         static ConsumerConfig consumerConfig = null;
-     
+
         void CreateConfig()
         {
             consumerConfig = new ConsumerConfig

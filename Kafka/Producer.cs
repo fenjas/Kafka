@@ -15,10 +15,7 @@ namespace Kafka
 
         void CreateConfig()
         {
-            producerConfig = new ProducerConfig
-            {
-                BootstrapServers = kafkaServer
-            };
+            producerConfig = new ProducerConfig { BootstrapServers = kafkaServer };
         }
 
         void CreateProducer()
@@ -53,8 +50,8 @@ namespace Kafka
             CreateConfig();
             CreateProducer();
             GenerateRandomMessages();
-                
-            for (int i=0; i<noOfMessages; i++)
+
+            for (int i = 0; i < noOfMessages; i++)
             {
                 SendMessage(kafkaTopicName, randomMessages[new Random((int)DateTime.Now.Millisecond).Next(0, randomMessages.Count - 1)]);
                 Thread.Sleep(800);
@@ -84,9 +81,8 @@ namespace Kafka
             }
             catch
             {
-
+                throw;
             }
-
         }
     }
 }

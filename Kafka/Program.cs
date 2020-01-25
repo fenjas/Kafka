@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kafka
 {
@@ -39,9 +36,12 @@ namespace Kafka
                             new Consumer().Consume();
                         }
                         break;
+
+                    default:
+                        Console.WriteLine("Usage: kafka produce <no of messages>");
+                        Console.WriteLine("Usage: kafka consume");
+                        break;
                 }
-
-
             }
         }
 
