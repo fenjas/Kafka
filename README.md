@@ -24,13 +24,13 @@ docker run --name kafka-server1 --network kafka-net -e ALLOW_PLAINTEXT_LISTENER=
 
 # Usage
 - Clone Kafka from Master and build in Visual Studio.
-- In one PS / cmd console window, run;
+- To produce messages, in a command console window, run;
 ```sh
 kafka produce <(int) no of messages>
 ```
-Doing this will create a topic called cars which is populated with json string messages with properties of cars read at random from cars.txt
+Doing this will create a <i>topic</i> called cars which is populated with JSON string messages comprising of car properties read at random from <i>cars.txt</i>.
 
-- In a second PS / cmd console window, run;
+- To output the consumed messagem in a second command prompt window, run;
 ```sh
 kafka consume
 ```
