@@ -22,8 +22,18 @@ docker run --name kafka-server1 --network kafka-net -e ALLOW_PLAINTEXT_LISTENER=
 
 > You should now have ZooKeeper and the Kafka broker up and running as per https://itnext.io/how-to-install-kafka-using-docker-a2b7c746cbdc
 
-# Code
+# Usage
+- Clone Kafka from Master and build in Visual Studio.
+- In one PS / cmd console window, run;
+```sh
+kafka produce <(int) no of messages>
+```
+Doing this will create a topic called cars which is populated with json string messages with properties of cars read at random from cars.txt
 
+- In a second PS / cmd console window, run;
+```sh
+kafka consume
+```
 
 
 # Sources
