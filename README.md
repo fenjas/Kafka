@@ -28,7 +28,7 @@ docker run --name kafka-server1 --network kafka-net -e ALLOW_PLAINTEXT_LISTENER=
 ```sh
 kafka produce <(int) no of messages>
 ```
-Doing this will create a <i>topic</i> called cars which is populated with JSON string messages comprising of car properties read at random from <i>cars.txt</i>.
+Doing this will create a <i>topic</i> called <i>cars</i> which is populated with JSON string messages comprising car properties read at random from <i>cars.txt</i>.
 
 - To output the consumed messagem in a second command prompt window, run;
 ```sh
