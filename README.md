@@ -15,24 +15,26 @@ This project demonstrates how to set up Apache Kafka on Windows using Docker Des
 docker network create kafka-net --driver bridge
 docker run --name zookeeper-server -p 2181:2181 --network kafka-net -e ALLOW_ANONYMOUS_LOGIN=yes bitnami/zookeeper:latest
 ```
+See <a href="https://github.com/fenjas/Kafka/blob/master/Kafka%20Produce%20and%20Consume.jpg">Kafka Screenshots</a>
 
 - In PS console 2, run the following:
 ```sh
 docker run --name kafka-server1 --network kafka-net -e ALLOW_PLAINTEXT_LISTENER=yes -e KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper-server:2181 -e KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 -p 9092:9092 bitnami/kafka:latest
 ```
+See <a href="https://github.com/fenjas/Kafka/blob/master/Kafka%20Produce%20and%20Consume.jpg">Kafka Screenshots</a>
 
 > You should now have ZooKeeper and the Kafka broker up and running as per https://itnext.io/how-to-install-kafka-using-docker-a2b7c746cbdc
 
 
 # Usage
 - Clone Kafka from Master and build in Visual Studio.
-- To produce messages, in a command console window, run;
+- To produce messages, in a command console window run;
 ```sh
 kafka produce <(int) no of messages>
 ```
 Doing this will create a <i>topic</i> called <i>cars</i> which is populated with JSON string messages comprising car properties read at random from <i>cars.txt</i>.
 
-- To output to screen the consumed messages, in a second command prompt window, run;
+- To output to screen the consumed messages, in a second command prompt window run;
 ```sh
 kafka consume
 ```
