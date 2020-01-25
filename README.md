@@ -1,4 +1,4 @@
-# Kafka Testing
+# Kafka Testing Demo
 This project demonstrates how to set up Apache Kafka on Windows using Docker Desktop and how to use C# code in terms of generating and consuming messages.
 
 
