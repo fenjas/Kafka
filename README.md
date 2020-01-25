@@ -35,7 +35,8 @@ Doing this will create a <i>topic</i> called <i>cars</i> which is populated with
 kafka consume
 ```
 
-See https://github.com/fenjas/Kafka/blob/master/Kafka%20Produce%20and%20Consume.jpg
+
+See <a ref="https://github.com/fenjas/Kafka/blob/master/Kafka%20Produce%20and%20Consume.jpg">Kafka Screenshots</a>
 
 
 # Sources
