@@ -1,0 +1,6 @@
+{"brandName" : "VW","model" : "Golf","doors" : "5","sportsCar" : "false"},
+{"brandName" : "Fiat","model" : "Uno","doors" : "5","sportsCar" : "false"},
+{"brandName" : "Tesla","model" : "Model 3","doors" : "5","sportsCar" : "false"},
+{"brandName" : "Ferrari","model" : "812GS","doors" : "2","sportsCar" : "true"}
+{"brandName" : "VW","model" : "Polo","doors" : "5","sportsCar" : "false"},
+{"brandName" : "Toyota","model" : "Vitz","doors" : "5","sportsCar" : "false"},
