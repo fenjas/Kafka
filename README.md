@@ -1,5 +1,5 @@
-# Kafka Testing
-This project demonstrates how to set up Apache Kafka on Windows and how C# code in terms of generating and consuming messages.
+# Kafka Testing Demo
+This project demonstrates how to set up Apache Kafka on Windows using Docker Desktop and how to use C# code in terms of generating and consuming messages.
 
 
 # Environment
@@ -26,18 +26,22 @@ docker run --name kafka-server1 --network kafka-net -e ALLOW_PLAINTEXT_LISTENER=
 
 # Usage
 - Clone Kafka from Master and build in Visual Studio.
-- To produce messages, in a command console window, run;
+- To produce messages, in a command console window run;
 ```sh
 kafka produce <(int) no of messages>
 ```
 Doing this will create a <i>topic</i> called <i>cars</i> which is populated with JSON string messages comprising car properties read at random from <i>cars.txt</i>.
 
-- To output to screen the consumed messages, in a second command prompt window, run;
+- To output to screen the consumed messages, in a second command prompt window run;
 ```sh
 kafka consume
 ```
 
-See <a href="https://github.com/fenjas/Kafka/blob/master/Kafka%20Produce%20and%20Consume.jpg">Kafka Screenshots</a>
+# Screenshots
+
+- <a href="https://github.com/fenjas/Kafka/blob/master/Running%20ZooKeeper%20in%20Docker.png">Running ZooKeeper in Docker</a>
+- <a href="https://github.com/fenjas/Kafka/blob/master/Running%20Kafka%20in%20Docker.png">Running Kafka in Docker</a>
+- <a href="https://github.com/fenjas/Kafka/blob/master/Kafka%20Produce%20and%20Consume.jpg">Kafka Screenshots</a>
 
 
 # Sources
