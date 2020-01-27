@@ -69,7 +69,7 @@ namespace Kafka
 
             try
             {
-                using (StreamReader sr = new StreamReader(messagesFile))
+                using (StreamReader sr = new StreamReader(Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory) + "\\" + messagesFile))
                 {
                     string line;
 
