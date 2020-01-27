@@ -26,7 +26,7 @@ namespace Kafka
                 catch
                 {
                     noOfMessages = 1;
-                    Usage();
+                    if (args[0]=="produce") Usage();
                 }
 
                 switch (args[0])
@@ -42,10 +42,6 @@ namespace Kafka
                         {
                             new Consumer().Consume();
                         }
-                        break;
-
-                    default:
-                        Usage();
                         break;
                 }
             }
