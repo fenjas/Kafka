@@ -9,6 +9,12 @@ namespace Kafka
 
         static void Main(string[] args)
         {
+            void Usage()
+            {
+                Console.WriteLine("Usage: kafka produce <no of messages>");
+                Console.WriteLine("Usage: kafka consume");
+            }
+
             Console.Clear();
 
             if (args.Any())
@@ -20,6 +26,7 @@ namespace Kafka
                 catch
                 {
                     noOfMessages = 1;
+                    Usage();
                 }
 
                 switch (args[0])
@@ -38,8 +45,7 @@ namespace Kafka
                         break;
 
                     default:
-                        Console.WriteLine("Usage: kafka produce <no of messages>");
-                        Console.WriteLine("Usage: kafka consume");
+                        Usage();
                         break;
                 }
             }
