@@ -23,7 +23,7 @@ docker run --name kafka-server1 --network kafka-net -e ALLOW_PLAINTEXT_LISTENER=
 
 <b>OR</b>
 
-> Run the batch file <i>setupKafka.cmd</i> from the <i>Environment</i> folder which uses <i>docker-compose</i> to set up the Kafka environment in Docker. Before doing this though, create the folder structure <i>"C:\users\user\Desktop\kafka\src"</i> and change the build folder of the solution to point to it. Compile and run the batch file. This will install/run Kafka in docker and run the producer / composer in seperate windows.
+> Run the batch file <i>setupKafka.cmd</i> from the <i>Environment</i> folder which uses <i>docker-compose</i> to set up the Kafka environment in Docker. Prior to running the batch file, create the folder structure <i>"C:\users\user\Desktop\kafka\src"</i> and point the solution's build folder to it; compile and run the batch file. This will install/load Kafka in docker and run the producer / composer in separate windows.
 
 
 > You should now have ZooKeeper and the Kafka broker up and running as per https://itnext.io/how-to-install-kafka-using-docker-a2b7c746cbdc
